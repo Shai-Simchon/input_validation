@@ -1,4 +1,4 @@
-# input_validation
+# sql_injection_script
 validation of web input text strings with selenium
 
 - pip install selenium
