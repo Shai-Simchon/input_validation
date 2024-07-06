@@ -36,7 +36,7 @@ def login():
     
     input_field = driver.find_element(By.NAME, "username")
     input_password = driver.find_element(By.NAME, "password")
-    
+    input_field.clear()
     input_field.send_keys(x)
     #time.sleep(2)
     input_password.send_keys('random')
@@ -55,6 +55,7 @@ def login():
         
     else:
         print("try again man!")
+        driver.back()
        
      
 if __name__ == "__main__":
